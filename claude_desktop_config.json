@@ -1,0 +1,61 @@
+{
+	"mcpServers": {
+		"weather_service": {
+		  "command": "python",
+		   "args": [
+			   "C:\\Python313\\tavily.py"
+		   ]
+		},		
+		"filesystem": {
+		  "command": "npx",
+		   "args": [
+			   "-y",
+			   "@modelcontextprotocol/server-filesystem",
+			   "C:\\Users\\kay.cho\\Documents\\mcp"
+		   ]
+		},
+		"brave-search": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-brave-search"
+			],
+			"env": {
+				"BRAVE_API_KEY": "YOUR_BRAVE_API_KEY"
+			}
+		},
+		"sequential-thinking": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-sequential-thinking"
+			]
+		},
+		"mcp-youtube": {
+			"command": "npx",
+			"args": [
+				"@anaisbetts/mcp-youtube"
+			]
+		},
+		"tavily-mcp": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"tavily-mcp@0.1.2"
+			],
+			"env": {
+				"TAVILY_API_KEY": "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"
+		}
+		},
+		"memory": {
+			"command": "npx",
+			"args": [
+				"-y",
+				"@modelcontextprotocol/server-memory"
+			]
+		}
+	},
+	"darkMode": "dark",
+	"scale": 0,
+	"locale": "ko-KR"	
+}
