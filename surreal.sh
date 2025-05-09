@@ -46,7 +46,7 @@ function Install {
     # Fetch the latest SurrealDB version
     if ($Nightly -eq $false) {
         Write-Output "Fetching the latest database version..."
-        $Version = 2.2.2
+        $Version = "2.2.2"
     } else {
         $Version = "nightly"
     }
