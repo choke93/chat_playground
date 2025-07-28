@@ -1,0 +1,12 @@
+https://edu.brityautomation.ai/scheduler/api/v1/jobs
+
+{
+	"jobType": "21",
+	"processId": "24eda223-18e2-447b-ac97-f27673678501",
+	"jobParameter": "{\"user_email\": \"kay.cho@stage.samsung.com\"}"
+}
+
+Content-type:
+application/json; charset=utf-8
+Autorization:
+eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNzUyNDUwNzAwMzM1LTIyY2UzM2M1LWRiZmRhMjkyIiwiaXNzIjoiQVVUSF9DTElFTlRfQ0VSVElGSUNBVEUiLCJhdWQiOiJBVVRIX0FQSV9TRVJWRVIiLCJzdWIiOiJBQ0NFU1NfVE9LRU4iLCJjbGllbnRUeXBlIjoiQVBJX0tFWSIsImNsaWVudElkIjoiQVVUSF9BUElfU0VSVkVSIiwidXNlcklkIjoia2F5LmNobyIsImNoYWxsZW5nZSI6IjE3NTI0NTA3MDAzMzUtOGQ3ODVlMjgtZmU0ZDUyOTAiLCJpcEFkZHIiOiIxOTIuMTY4LjI1NC4yIiwidGVuYW50SWQiOiJUTl9kZTMxYTZjZTk3MWM0MWE4ODVjM2ExODg1ZTVmMGJlMSIsInNlY3VyaXR5VHlwZSI6InYyIiwiaWF0IjoxNzUyNDUwNzAwLCJleHAiOjE3NTUwOTcxOTl9.X6UjOpgqnxSCP7QWMeZGW_jyYA6U3QUX2J-A3P7Brgk
