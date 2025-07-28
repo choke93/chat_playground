@@ -24,3 +24,20 @@ eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNzUyNDUwNzAwMzM1LTIyY2UzM2M1LWRiZmRhMjkyIiwiaXN
 	"userTokenTargetType": null,
 	"userTokenTenantId": null
 }
+
+
+curl --request POST \
+  --url 'https://edu.brityautomation.ai/api/v1/run/646e0dd2-58c3-4748-8a48-b0d6a89bb4ed?stream=false' \
+  --header 'Content-type: application/json' \
+  --header 'x-api-key: eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxNzUzNjcwNjA3NTU2LTBjOTQ3MzM0LTY5YTY0NGNiIiwiaXNzIjoiQVVUSF9DTElFTlRfQ0VSVElGSUNBVEUiLCJhdWQiOiJBVVRIX0FQSV9TRVJWRVIiLCJzdWIiOiJBQ0NFU1NfVE9LRU4iLCJjbGllbnRUeXBlIjoiQVBJX0tFWSIsImNsaWVudElkIjoiQVVUSF9BUElfU0VSVkVSIiwidXNlcklkIjoia2F5LmNobyIsImNoYWxsZW5nZSI6IjE3NTM2NzA2MDc1NTYtNzA1MzBiNDItMjVmNDgxZWEiLCJpcEFkZHIiOiIxOTIuMTY4LjI1NC4yIiwidGVuYW50SWQiOiJUTl9kZTMxYTZjZTk3MWM0MWE4ODVjM2ExODg1ZTVmMGJlMSIsInNlY3VyaXR5VHlwZSI6InYyIiwiaWF0IjoxNzUzNjcwNjA3LCJleHAiOjE3NTYzMDY3OTl9.FVbSwFdkJJU4q7LFVnHQLvT_dtS9OcY6-gHPReCMtn0' \
+  --cookie __cf_bm=OoC6imPCYJKbDzA36Q9YvusuVBCZPYqIb2i90xas7pI-1753671281-1.0.1.1-yGKumrV0HQCZW3ykXW3cEQNbVe_WsITw2fXKJZNmQ06P7AmRtdbmOlLjJJrN7fNMcavHZImhd4oEt2u.jI57rRyWJyXo8qGYnR4u76Vjtvw \
+  --data '{
+	"input_value": "just say hello",
+	"output_type": "chat",
+	"input_type": "chat",
+	"tweaks": {
+		"ChatInput-qvxiS": {},
+		"OpenAIModel-9f35z": {},
+		"ChatOutput-CiN4y": {}
+	}
+}'
