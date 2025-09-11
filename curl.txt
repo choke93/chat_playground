@@ -6,3 +6,53 @@ curl --request POST \
   --data '{
 	"resultType" :"basic"
 }'
+
+
+from langflow.custom import Component
+from langflow.inputs import TextInput
+from langflow.outputs import TextOutput
+import requests
+
+
+class EmployeeAPI(Component):
+    display_name = "Employee API Request"
+    description = "POST request to fetch employee data from gov-brityworks API"
+    documentation = "https://openapi.dev.gov-brityworks.com/employee/api/v2.0/employees"
+
+    # ---- Input variables ----
+    inputs = [
+        TextInput(name="base_url", display_name="Base URL", default="https://openapi.dev.gov-brityworks.com/employee/api/v2.0/employees"),
+        TextInput(name="user_id", display_name="User ID", default="kay.cho@dev.gov-brityworks.com"),
+        TextInput(name="system_id", display_name="System ID", default="KCS20REST00001_devgv"),
+        TextInput(name="auth_token", display_name="Bearer Token", default="YOUR_ACCESS_TOKEN"),
+        TextInput(name="result_type", display_name="Result Type", default="basic"),
+    ]
+
+    # ---- Output ----
+    outputs = [
+        TextOutput(name="response", display_name="API Response"),
+    ]
+
+    def run(self, base_url, user_id, system_id, auth_token, result_type):
+        try:
+            # Build URL
+            url = f"{base_url}?userIds={user_id}"
+
+            # Headers
+            headers = {
+                "Content-Type": "application/json",
+                "System-ID": system_id,
+                "authorization": f"Bearer {auth_token}"
+            }
+
+            # Body
+            data = {
+                "resultType": result_type
+            }
+
+            # Request
+            response = requests.post(url, headers=headers, json=data)
+
+            return {"response": response.text}
+        except Exception as e:
+            return {"response": f"Error: {str(e)}"}
