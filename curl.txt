@@ -1,0 +1,8 @@
+curl --request POST \
+  --url 'https://openapi.dev.gov-brityworks.com/employee/api/v2.0/employees?userIds=kay.cho%40dev.gov-brityworks.com' \
+  --header 'Content-Type: application/json' \
+  --header 'System-ID: KCS20REST00001_devgv' \
+  --header 'authorization: Bearer eyJ4Nxxx' \
+  --data '{
+	"resultType" :"basic"
+}'
